@@ -8,7 +8,7 @@ An interactive **Natural Language Processing (NLP)** application designed to cla
 
 | Testing 'Ham' Message | Testing 'Spam' Message |
 |:---:|:---:|
-| ![Ham Detection](./Images/ham.png) | ![Spam Detection](./Images/spam.png) |
+| ![Ham Detection](./Images/Ham.png) | ![Spam Detection](./Images/Spam.png) |
 
 <p align="center">
   <b>Detailed Performance Metrics & Model Comparison</b><br>
