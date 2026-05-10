@@ -125,11 +125,12 @@ class SpamDetectionApp:
 
     # ─────────────────────────── TRAIN ───────────────────────────
     def prepare_data_and_models(self):
-        file_path = "emails.csv"
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(current_dir, '..', 'data', 'emails.csv')
 
         if not os.path.exists(file_path):
-            messagebox.showerror("Error", "emails.csv not found!\nPlace it in the same directory as this script.")
-            self.status_label.config(text="❌  emails.csv not found", fg="red")
+            messagebox.showerror("Error", f"Dataset not found!\n\nLooking for: {file_path}")
+            self.status_label.config(text="❌ emails.csv not found", fg="red")
             return
 
         df = pd.read_csv(file_path)
